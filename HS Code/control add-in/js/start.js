@@ -33,7 +33,7 @@ window.CreateInputElement = function(hscode){
     validInput = true;
   }
 
-  inputElement.addEventListener('change', async function(event){
+  inputElement.addEventListener('input', async function(event){
     let enteredText = event.target.value;
     ValidInput(enteredText);
     if(validInput){
