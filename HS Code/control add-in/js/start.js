@@ -68,6 +68,10 @@ window.CreateInputElement = function(hscode){
           currentText = `${currentText}.00`;
           SendToAl(currentText, true);
           break;
+        case 0:
+          currentText = '';
+          SendToAl(currentText, false);
+          break;
       }
     }
   });
